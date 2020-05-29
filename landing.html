@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+      rel="stylesheet"
+    />
+    <link href="dist/css/main.min.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body class="container">
+    <section class="landing">
+      <div class="landing__text">
+        <h1 class="heading-primary heading-primary--main landing__text--brand">
+          Cimex
+        </h1>
+        <h2 class="landing__text--subtext">
+          Project management and issue tracking
+        </h2>
+
+        <ul class="landing__text--list">
+          <li>Manage your projects</li>
+          <li>Track your issues</li>
+          <li>Collaborate with others</li>
+        </ul>
+
+        <img src="img/landing2.svg" alt="coders" class="landing__img" />
+      </div>
+      <div class="auth">
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+          <span class="slider__text--left">Register</span>
+          <span class="slider__text--right">Login</span>
+        </label>
+
+        <form class="auth__register">
+          <p class="auth__register--lead heading__secondary">
+            Create Your Account
+          </p>
+          <label class="auth__register--email"
+            >Email <span class="u-text-warning">*</span></label
+          >
+          <input type="email" class="auth__register--email form__input" />
+          <span class="form__validation">Please include a valid email</span>
+          <label class="auth__register--firstName"
+            >First name <span class="u-text-warning">*</span></label
+          >
+          <input
+            type="text"
+            class="auth__register--firstName form__input"
+            required
+          />
+          <label class="auth__register--lastName"
+            >Last name <span class="u-text-warning">*</span></label
+          >
+          <input
+            type="text"
+            class="auth__register--lastName form__input"
+            required
+          />
+          <span class="form__validation">Name is required</span>
+          <label class="auth__register--password"
+            >Password <span class="u-text-warning">*</span></label
+          >
+          <input
+            type="password"
+            class="auth__register--password form__input"
+            minlength="6"
+          />
+          <span class="form__validation"
+            >Please enter a password with 6 or more characters</span
+          >
+          <label class="auth__register--password"
+            >Confirm Password <span class="u-text-warning">*</span></label
+          >
+          <input
+            type="password"
+            class="auth__register--password form__input"
+            minlength="6"
+          />
+          <span class="form__validation">Please confirm your password</span>
+          <span class="form__validation">Passwords do not match</span>
+          <input
+            type="submit"
+            value="REGISTER"
+            class="auth__register--submit btn btn-green u-margin-top-small"
+          />
+        </form>
+        <!--
+        <form class="auth__login">
+          <p class="auth__login--lead heading__secondary">
+            Sign Into Your Account
+          </p>
+          <label class="auth__login--email"
+            >Email <span class="u-text-warning">*</span></label
+          >
+          <input type="email" class="auth__login--email form__input" />
+          <span class="form__validation">Email is required</span>
+          <label class="auth__login--password"
+            >Password <span class="u-text-warning">*</span></label
+          >
+          <input
+            type="password"
+            class="auth__login--password form__input"
+            minlength="6"
+          />
+          <span class="form__validation">Password is required</span>
+          <span class="form__validation">Invalid credentials</span>
+          <input
+            type="submit"
+            value="LOGIN"
+            class="auth__login--submit btn btn-green u-margin-top-small"
+          />
+        </form>
+        -->
+      </div>
+    </section>
+  </body>
+</html>

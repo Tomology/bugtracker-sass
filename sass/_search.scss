@@ -1,0 +1,68 @@
+.searchBar {
+  font-family: inherit;
+  color: inherit;
+  padding: 1rem 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 3px solid $color-grey-light-2;
+  border-radius: 3px;
+  outline: none;
+  background-color: $color-white;
+  display: inline-block;
+  transition: all 0.2s;
+
+  &:focus,
+  &:hover,
+  &:active {
+    border-bottom: 3px solid $color-primary;
+  }
+}
+
+.search {
+  &__results {
+    margin-top: 3rem;
+
+    &--peopleItem {
+      margin-top: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      border: 1px solid $color-grey-light-2;
+      text-decoration: none;
+      color: $color-grey-dark;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+
+      &-avatar {
+        margin-left: auto;
+        margin-right: auto;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 4rem;
+        margin-bottom: 1rem;
+      }
+
+      &-name {
+        margin-bottom: 0.5rem;
+      }
+
+      &-blurb {
+        font-size: 1.3rem;
+      }
+
+      &-options {
+        margin: 1rem 0;
+        border-top: 1px solid $color-grey-light-2;
+
+        span {
+          margin-top: 1rem;
+          font-size: 1.4rem;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

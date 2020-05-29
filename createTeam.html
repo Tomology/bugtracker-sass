@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/css/main.min.css" rel="stylesheet" />
+    <title>Create Team</title>
+  </head>
+  <body>
+    <div class="popup">
+      <div class="popup__content">
+        <h3>Create a Team</h3>
+        <div class="popup__close">&times;</div>
+        <form class="popup__form">
+          <label for="teamName">Team Name <span class="u-text-warning">*</span></label>
+          <input type="text" id="teamName" class="form__input" />
+          <label for="teamDescription">Team Description</label>
+          <textarea class="form__input" id="teamDescription"></textarea>
+          <label for="inviteMembers">Invite Members</label>
+          <select class="form__input react-select" id="inviteMembers"></select>
+          <span class="popup__form--infoText">Note: you can only invite people that are in your contacts.</span>
+          <div class="popup__form--buttons">
+          <button class="btn btn-cancel btn-form popup__form--cancel">Cancel</button>
+          <button type="submit" disabled class="btn btn-green btn-form popup__form--create">Create</button>      
+        </div>
+        </form>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

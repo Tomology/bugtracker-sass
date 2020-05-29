@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/main.min.css" />
+    <title>Project</title>
+  </head>
+  <body>
+    <main class="mainBody">
+      <section class="project">
+        <div class="project__top">
+          <div class="project__top--navLinks">
+            <a href="#">Projects</a>
+            <span> / projectName</span>
+          </div>
+          <div class="project__top--projectUrl">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="globe" class="svg-inline--fa fa-globe fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"></path></svg>
+            <a href="#">https://github.com/scala/bug</a>
+          </div>
+          <button class="btn btn-green project__top--createIssue">
+            Create Issue
+          </button>
+          <h1>Issues</h1>
+          <div class="project__top--filter">
+            <input type="text" class="form__input" />
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="search"
+              class="svg-inline--fa fa-search fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="project__side">
+          <div class="project__side--issuesList">
+            <select class="project__side--selectFilter">
+              <option>Assigned to Me</option>
+            </select>
+            <a href="#" class="project__side--issuesList-item">
+              <span>IssueName (key-#)</span>
+            </a>
+            <a href="#" class="project__side--issuesList-item">
+              <span>IssueName (key-#)</span>
+            </a>
+          </div>
+          <div class="project__side--button-special">
+          <button class="btn btn-green share">
+            Share Project
+          </button>
+          <button class="btn btn-grey more">
+            &hellip;
+          </button>
+        </div>
+          <button class="btn btn-grey project__side--button">
+            Edit Project
+          </button>
+          <button class="btn btn-grey project__side--button">
+            Delete Project
+          </button>
+        </div>
+        <div class="project__main">
+          <div class="issue__main">
+            <h2 class="issue__main--issueName">Issue Name</h2>
+            <span class="issue__main--key">Issue Key</span>
+            <span class="issue__main--dateCreated"
+              >Created on 23 June 2019</span
+            >
+            <div class="issue__main--type">
+                <span>Type</span>
+                <p>
+                 Bug
+                </p>
+            </div>
+            <div class="issue__main--summary">
+              <span>Summary</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                nobis?
+              </p>
+            </div>
+            <div class="issue__main--description">
+              <span>Description</span>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+                reprehenderit odio cumque atque quibusdam accusantium tempore,
+                rem laudantium assumenda delectus velit inventore obcaecati
+                dolor! Quo ducimus molestias deleniti soluta at! Lorem ipsum
+                dolor sit amet consectetur, adipisicing elit. Nulla sapiente
+                officiis atque maxime, ex ipsum quam illo iste nihil amet
+                repudiandae dolorem expedita. Odit possimus iure, vero veniam
+                fugit tenetur. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Dolore reprehenderit odio cumque atque
+                quibusdam accusantium tempore, rem laudantium assumenda delectus
+                velit inventore obcaecati dolor! Quo
+              </p>
+            </div>
+            <div class="issue__main--comments">
+              <span>Comments</span>
+              <form>
+                <textarea type="text" class="form__input issue__main--comments-input" placeholder="Add a comment..."></textarea>
+                <button
+                  type="submit"
+                  class="btn btn-grey issue__main--comments-button"
+                >
+                  Post
+                </button>
+              </form>
+              <div class="issue__main--comments-postedComments">
+                <div class="issue__main--comments-postedComments-commentItem">
+                  <a href="#" class="issue__main--comments-postedComments-commentItem-user">
+                    <div class="avatar"></div>
+                    <span class="name">Jake Jones</span>
+                  </a>
+                  <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit alias, perspiciatis rerum reiciendis unde </p>
+                  <div class="issue__main--comments-postedComments-commentItem-footer">
+                    <div class="date">16 June 2020</div>
+                    <div class="remove">Delete</div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="issue__side">
+            <div class="issue__side--status">
+              <span class="issue__side--heading">Status</span>
+              <div class="issue__side--status-div">
+                <span>In Progress</span>
+                <button class="btn btn-grey issue__side--status-button">
+                  Change Status
+                </button>
+                <p class="issue__side--status-info">Status last changed by name on 23 June 2020.</p>
+              </div>
+             
+            </div>
+            <div class="issue__side--assignee">
+              <span class="issue__side--heading">Assignee(s)</span>
+              <a href="#" class="issue__side--assignee-item">
+                <div class="avatar"></div>
+                <div class="name">John Dough</div>
+              </a>
+              <a href="#" class="issue__side--assignee-item">
+                <div class="avatar"></div>
+                <div class="name">Veronica Voss</div>
+              </a>
+            </div>
+            <div class="issue__side--reporter">
+              <span class="issue__side--heading">Reporter</span>
+              <a href="#" class="issue__side--reporter-item">
+                <div class="avatar"></div>
+                <span class="name">Thomas Sobor</span>
+              </a>
+            </div>
+            <div class="issue__side--priority">
+              <span class="issue__side--heading">Priority</span>
+              <span>Medium</span>
+            </div>
+            <div class="issue__side--dueDate">
+              <span class="issue__side--heading">Due Date</span>
+              <span>23 June 2020</span>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

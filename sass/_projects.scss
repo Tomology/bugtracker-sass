@@ -1,0 +1,98 @@
+.projects {
+  min-height: 100vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    font-size: 1.4rem;
+    padding: 1rem;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+  }
+
+  &__filter {
+    width: 30%;
+    position: relative;
+
+    input {
+      width: 100%;
+      padding-right: 2.5rem;
+    }
+
+    svg {
+      display: inline-block;
+      width: 2rem;
+      color: $color-grey-dark;
+      position: absolute;
+      right: 0.5rem;
+      top: 0.5rem;
+    }
+  }
+
+  &__list {
+    margin-top: 3rem;
+    text-align: left;
+    border-collapse: collapse;
+
+    a {
+      text-decoration: none;
+      color: $color-black;
+    }
+
+    th {
+      border-bottom: 3px solid $color-grey-light-2;
+    }
+
+    &--projectItem {
+      background-color: $color-white;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: $color-grey-light-2;
+      }
+
+      &-projectName {
+        width: 33.333333%;
+        span {
+          margin-left: 0.5rem;
+        }
+      }
+
+      &-key {
+        width: 33.333333%;
+      }
+
+      &-lead {
+        width: 33.333333%;
+        &-avatar {
+          width: 2rem;
+          height: 2rem;
+          display: inline-block;
+          vertical-align: middle;
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        &-name {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    tr:last-child {
+      border-bottom: 3px solid $color-grey-light-2;
+    }
+  }
+}

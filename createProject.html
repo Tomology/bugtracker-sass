@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/css/main.min.css" rel="stylesheet" />
+    <title>Create Project</title>
+  </head>
+  <body>
+    <div class="popup">
+      <div class="popup__content">
+        <h3>Create Project</h3>
+        <div class="popup__close">&times;</div>
+        <form class="popup__form">
+          <label for="projectName">Project Name <span class="u-text-warning">*</span></label>
+          <input type="text" id="projectName" class="form__input" />
+          <label for="projectKey">Key <span class="u-text-warning">*</span></label>
+          <input type="text" id="projectKey" class="form__input" />
+          <label for="projectUrl">Project URL</label>
+          <input type="url" id="projectUrl" class="form__input" />
+          <label for="sharedWith">Share Project</label>
+          <select class="form__input " id="sharedWith"></select>
+          <span class="popup__form--infoText" style="margin-top: 2px;">Note: you can only share the project with people that are in your contacts and teams of which you are a member.</span>
+          <div class="popup__form--buttons">
+          <button class="btn btn-cancel btn-form popup__form--cancel">Cancel</button>
+          <button type="submit" class="btn btn-green btn-form popup__form--create">Create</button>       
+        </div>
+        </form>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

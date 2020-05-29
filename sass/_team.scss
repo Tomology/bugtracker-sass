@@ -1,0 +1,141 @@
+.team {
+  display: grid;
+  grid-template-columns: minmax(30rem, 1fr) 2fr;
+  grid-column-gap: 10rem;
+  min-height: 100vh;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+
+  &__side {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      margin-bottom: 2rem;
+    }
+
+    &--description {
+      font-size: 1.4rem;
+      color: $color-grey-dark;
+      margin-bottom: 1rem;
+    }
+
+    &--teamCreator {
+      margin-bottom: 2rem;
+      &-title {
+        font-size: 1.4rem;
+        color: $color-grey-dark;
+      }
+
+      &-info {
+        text-decoration: none;
+        display: flex;
+        margin-bottom: 2rem;
+
+        &-avatar {
+          height: 2rem;
+          width: 2rem;
+          border-radius: 4rem;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+
+        &-name {
+          font-size: 1.4rem;
+          margin-left: 2rem;
+          color: $color-grey-dark;
+        }
+      }
+    }
+
+    &--buttons {
+      padding: 1rem 0.5em;
+      border-radius: 4px;
+      font-size: inherit;
+      margin-bottom: 0.5rem;
+    }
+
+    .team__members {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid $color-grey-light-2;
+      border-radius: 4px;
+      padding: 1rem 2rem;
+      margin-top: 3.5rem;
+
+      span {
+        font-size: 1.4rem;
+        color: $color-grey-dark;
+        margin-bottom: 1rem;
+      }
+
+      &--list {
+        display: flex;
+        flex-direction: column;
+
+        &-memberItem {
+          display: flex;
+
+          //grid-template-columns: min-content 1fr;
+          padding: 1rem;
+          border-radius: 4px;
+          transition: all 0.2s;
+
+          &:hover {
+            background-color: $color-grey-light-1;
+          }
+
+          a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+          }
+
+          &-avatar {
+            grid-column: 1 / 2;
+
+            height: 2rem;
+            width: 2rem;
+            border-radius: 4rem;
+            margin-top: auto;
+            margin-bottom: auto;
+          }
+
+          &-spans {
+            grid-column: 2 / -1;
+            margin-left: 2rem;
+          }
+
+          &-remove {
+            height: min-content;
+            display: inline-block;
+            font-size: 2rem;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            transition: all 0.2s;
+
+            &:hover {
+              color: $color-grey-dark;
+            }
+          }
+
+          &-status {
+            background-color: $color-grey-light-2;
+            margin-left: 2rem;
+            padding: 0.5rem;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  &__main {
+  }
+}

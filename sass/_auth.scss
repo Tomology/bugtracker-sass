@@ -1,0 +1,121 @@
+.auth {
+  width: 70%;
+  background-color: $color-white;
+  margin: auto;
+  text-transform: uppercase;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+  border-radius: 3px;
+  padding: 5rem 6.5rem;
+
+  &__register {
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
+    grid-auto-flow: row dense;
+
+    &--lead {
+      grid-column: 1 / -1;
+      justify-self: center;
+      width: 50%;
+      text-align: center;
+    }
+
+    input:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    &--email,
+    &--password {
+      grid-column: 1 / -1;
+    }
+
+    &--firstName {
+      grid-column: 1 / 2;
+      width: 95%;
+      justify-self: start;
+    }
+
+    &--lastName {
+      grid-column: 2 / 3;
+      width: 95%;
+      justify-self: end;
+    }
+
+    &--submit {
+      grid-column: 1 / -1;
+      min-width: 60%;
+      justify-self: center;
+    }
+  }
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  min-width: 50%;
+  height: 34px;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-grey-light-1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  align-items: center;
+
+  &__text {
+    &--right {
+      position: absolute;
+      right: 1rem;
+    }
+
+    &--left {
+      left: 1rem;
+      position: absolute;
+    }
+  }
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  left: 0;
+  bottom: 0;
+  border-radius: 34px;
+  background-color: red;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: $color-grey-light-1;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15rem);
+  -ms-transform: translateX(15rem);
+  transform: translateX(15rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 34px;
+}

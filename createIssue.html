@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/css/main.min.css" rel="stylesheet" />
+    <title>Create Issue</title>
+  </head>
+  <body>
+    <div class="popup">
+      <div class="popup__content">
+        <h3>Create Issue</h3>
+        <div class="popup__close">&times;</div>
+        <form class="popup__form">
+          <label for="issueName">Issue Name <span class="u-text-warning">*</span></label>
+          <input type="text" id="issueName" class="form__input" />
+          <label for="issueType" class="u-col-1-of-2">Issue Type <span class="u-text-warning">*</span></label>
+          <select class="form__input u-col-1-of-2" id="issueType"></select>
+          <label for="priority" class="u-col-2-of-2">Priority <span class="u-text-warning">*</span></label>
+          <select class="form__input u-col-2-of-2" id="priority"></select>
+          <label for="summary">Summary <span class="u-text-warning">*</span></label>
+          <input type="text" id="summary" class="form__input" />
+          <label for="description">Description <span class="u-text-warning">*</span></label>
+          <textarea class="form__input" id="description"></textarea>
+          <label for="assignee">Assignee(s)</label>
+          <select class="form__input " id="assignee"></select>
+          <span class="popup__form--infoText" style="margin-top: 2px;">Note: you can only assign an issue to people and teams with whom this project has been shared.</span>
+          <label for="dueDate">Due Date</label>
+          <input type="date" id="dueDate" class="form__input">
+          <div class="popup__form--buttons">
+          <button class="btn btn-cancel btn-form popup__form--cancel">Cancel</button>
+          <button type="submit"  class="btn btn-green btn-form popup__form--create">Create</button>       
+        </div>
+        </form>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
