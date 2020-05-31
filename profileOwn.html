@@ -118,7 +118,7 @@
         </div>
         <div class="profile__main">
           <div class="profile__receivedRequests">
-            <h3>Received Requests</h3>
+            <h3>Pending Requests</h3>
             <span class="infoText"
               >Note: accepting a team invite automatically adds all members to
               your contacts.</span
@@ -129,16 +129,34 @@
                   ><a href="#">firstName lastName </a> would like to add you to
                   their contacts:</span
                 >
-                <button class="btn btn-green">Accept</button
-                ><button class="btn btn-grey">Decline</button>
+                <div class="profile__receivedRequests--buttons">
+                  <button
+                    class="btn btn-green profile__receivedRequests--buttons-button"
+                  >
+                    Accept</button
+                  ><button
+                    class="btn btn-grey profile__receivedRequests--buttons-button"
+                  >
+                    Decline
+                  </button>
+                </div>
               </div>
               <div class="profile__receivedRequests--requests-team">
                 <span
                   ><a href="#">firstName lastName </a> would like you to join
                   their team <a href="#">teamName</a>:</span
                 >
-                <button class="btn btn-green">Accept</button
-                ><button class="btn btn-grey">Decline</button>
+                <div class="profile__receivedRequests--buttons">
+                  <button
+                    class="btn btn-green profile__receivedRequests--buttons-button"
+                  >
+                    Accept</button
+                  ><button
+                    class="btn btn-grey profile__receivedRequests--buttons-button"
+                  >
+                    Decline
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -153,17 +171,35 @@
                 <a href="#"><span>Project Name</span></a>
                 <a href="#"><span>(Project Key)</span></a>
               </div>
+              <div class="profile__yourProjects--projects-projectItem">
+                <a href="#"><span>Project Name</span></a>
+                <a href="#"><span>(Project Key)</span></a>
+              </div>
             </div>
           </div>
           <div class="profile__yourTeams">
             <h3>Teams You've Created</h3>
             <div class="profile__yourTeams--teams">
-              <div class="profile__yourTeams--teams-teamItem">
-                <a href="#"><span>Team Name</span></a>
-              </div>
-              <div class="profile__yourTeams--teams-teamItem">
-                <a href="#"><span>Team Name</span></a>
-              </div>
+              <a href="#" class="people__teams--teamItem">
+                <div class="people__teams--teamItem-teamAvatar"></div>
+                <span class="people__teams--teamItem-teamName">Team Name</span>
+                <div class="people__teams--teamItem-teamCreator"></div>
+              </a>
+              <a href="#" class="people__teams--teamItem">
+                <div class="people__teams--teamItem-teamAvatar"></div>
+                <span class="people__teams--teamItem-teamName">Team Name</span>
+                <div class="people__teams--teamItem-teamCreator"></div>
+              </a>
+              <a href="#" class="people__teams--teamItem">
+                <div class="people__teams--teamItem-teamAvatar"></div>
+                <span class="people__teams--teamItem-teamName">Team Name</span>
+                <div class="people__teams--teamItem-teamCreator"></div>
+              </a>
+              <a href="#" class="people__teams--teamItem">
+                <div class="people__teams--teamItem-teamAvatar"></div>
+                <span class="people__teams--teamItem-teamName">Team Name</span>
+                <div class="people__teams--teamItem-teamCreator"></div>
+              </a>
             </div>
           </div>
         </div>
